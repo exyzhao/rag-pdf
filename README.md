@@ -69,7 +69,7 @@ npm start
 
 - I deployed the application on Render, but found that since I'm on the free tier, the backend needs at least 50 seconds to wake up from inactivity, leading to high latency responses and even timing out. Since local deployment only needs around ~2.5s to generate responses, I've published only this repository.
 
-- If I had more time, I'd scope out the next feature depending on the users - either including a page and line number in the source cited allowing for quicker search of multiple PDFs, or allowing for upload of a PDF. This would depend on the use case; e.g., a researcher would likely prioritize seeing page/line numbers to quick filter through a source, whereas a student writing an essay may prefer to be able to upload mulitple PDFs to synthesize information.
+- If I had more time, I'd scope out the next feature depending on the users - either including a page and line number in the source cited, allowing for quicker search of multiple PDFs, or allowing for upload of a PDF. This would depend on the use case; e.g., a researcher would likely prioritize seeing page/line numbers to quickly filter through a source, whereas a student writing an essay may prefer to be able to upload PDFs in the application to synthesize information.
 
 
 ## Demo Video
