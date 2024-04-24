@@ -1,6 +1,6 @@
 # Retrieval-Augmented Generation for PDF
 
-Fullstack application that uses OpenAI's API to answer questions based on the Startup Playbook by Sam Altman.
+Fullstack application that uses OpenAI's API to answer questions based on the Startup Playbook by Sam Altman or the Settlers of Catan Rulebook.
 
 
 ## Setup
@@ -37,7 +37,7 @@ Start the query server.
 python3 query_data.py
 ```
 
-To answer questions about a different PDF, replace the PDF stored in `data/Startup Playbook.pdf` and rebuild the Chroma DB.
+To answer questions about a different PDF, add the PDF to `backend/data/` or replace the PDF stored there, then rebuild the Chroma DB.
 
 ### Frontend
 
@@ -69,4 +69,9 @@ npm start
 
 - I deployed the application on Render, but found that since I'm on the free tier, the backend needs at least 50 seconds to wake up from inactivity, leading to high latency responses and even timing out. Since local deployment only needs around ~2.5s to generate responses, I've published only this repository.
 
-- If I had more time, I'd scope out the next feature depending on the users - either including a page and line number in the source cited, allowing for multiple PDFs, or allowing for upload of a PDF. This would depend on the use case; e.g., a researcher would likely prioritize seeing page/line numbers to quick filter through a source, whereas a student writing an essay may prefer to be able to upload mulitple PDFs to synthesize information.
+- If I had more time, I'd scope out the next feature depending on the users - either including a page and line number in the source cited allowing for quicker search of multiple PDFs, or allowing for upload of a PDF. This would depend on the use case; e.g., a researcher would likely prioritize seeing page/line numbers to quick filter through a source, whereas a student writing an essay may prefer to be able to upload mulitple PDFs to synthesize information.
+
+
+## Demo Video
+
+https://youtu.be/51Bej32HirE
